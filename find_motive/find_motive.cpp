@@ -1,17 +1,11 @@
-#include <iostream>
-#include <fstream>
-
-
 #include "find_motive.h"
-
-
 
 int max(int a, int b)
 {
     return (a > b) ? a : b;
 }
 
-void badHeuristic(std::string str, int size, int badchar[NO_OF_CHARS])
+void badHeuristic(string str, int size, int badchar[NO_OF_CHARS])
 {
     int i;
 
@@ -23,21 +17,19 @@ void badHeuristic(std::string str, int size, int badchar[NO_OF_CHARS])
 }
 
 
-
-int find_motive(std::string txt, std::string motive)
+int find_motive(string txt, string motive)
 {
     int count = 0;
-   
+
     int m = motive.size();
     int n = txt.size();
 
     int badchar[NO_OF_CHARS];
-    badHeuristic(motive.data(), m, badchar);
+    badHeuristic(motive, m, badchar);
 
     int s = 0;
     while (s <= (n - m))
     {
-        
         int j = m - 1;
         while (j >= 0 && motive[j] == txt[s + j])
         {
@@ -51,23 +43,9 @@ int find_motive(std::string txt, std::string motive)
             {
                 s++;
             }
-            
-            // s += (s + m < n) ? m - badchar[txt[s + m]] : 1;
         }
         else
             s += max(1, j - badchar[txt[s + j]]);
     }
     return count;
-    
 }
-
-// void printOccurrences(std::string txt, std::string pat)
-// {
-//     int found = txt.find(pat);
-//     while (found != std::string::npos) {
-//         std::cout << "Pattern found at index " << found << std::endl;
-//         found = txt.find(pat, found + 1);
-//     }
-// }
-
-
