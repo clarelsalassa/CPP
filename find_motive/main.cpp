@@ -4,7 +4,7 @@ int main(int argc, char *argv[])
 {
     if (argc != 3)
     {
-        cout << "Usage: ./main [PATH] [MOTIVE]";
+        cout << "Usage: ./main [PATH] [MOTIVE]\n";
         return 1;
     }
     int num;
@@ -14,7 +14,7 @@ int main(int argc, char *argv[])
     ifstream file (path);
     if (!file.is_open())
     {
-        cout<<"The file " << path << " could not be opened.";
+        cout<<"The file " << path << " could not be opened.\n";
         return 1;
     }
     
@@ -22,7 +22,7 @@ int main(int argc, char *argv[])
     
     num = find_motive(mystring, motive);
 
-    cout<<"The file " << path << " contains "<< num << " words containing the motive " << motive;
+    cout<<"The file " << path << " contains "<< num << " words containing the motive " << motive << "\n";
 
     return 0;
 }
