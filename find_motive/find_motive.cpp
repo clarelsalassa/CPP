@@ -37,9 +37,9 @@ int find_motive(string txt, string motive)
         }
 
         if (j < 0)
-        {
+        {            
             count++;
-            while (txt[s] != ' ' && s < n)
+            while (txt[s] != ' ' && txt[s] != '\n' && s <= n)
             {
                 s++;
             }
