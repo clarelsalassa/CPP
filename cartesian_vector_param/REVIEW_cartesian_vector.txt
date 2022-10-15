@@ -1,4 +1,6 @@
-Salut !
+Salut ! 
+(review du groupe 19 clarel et alexandre VOINIER 
+-> 20 CHALUMEAU Clara et MAILLET Arnaud)
 
 Alors pour ce code review ça va aller très vite, c'est propre et vous avez bien pensez
 à mettre le bon nom du dossier ainsi que value au lieu de int.
