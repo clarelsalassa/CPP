@@ -18,13 +18,11 @@ public:
 // Add suitable constructors
     Vector(){
         for (size_t i = 0; i < NDIM; i++)
-        {
             v[i] = 0;
-        }
     }
-    Vector(initializer_list<int> l){
-        int i = 0;
-        for (int num : l)
+    Vector(initializer_list<value> l){
+        size_t i = 0;
+        for (value num : l)
         {
             v[i] = num;
             i++;
@@ -33,24 +31,27 @@ public:
     // possibly more
 
 // Public Member functions here
-    int operator[](size_t idx) const;
-    int& operator[](size_t idx);
+    value operator[](size_t idx) const;
+    value& operator[](size_t idx);
 
     Vector& operator+=(const Vector& rhs);
-    Vector& operator+=(const int number);
     Vector operator+(const Vector& rhs);
+
     Vector& operator-=(const Vector& rhs);
-    Vector operator*(const int number);
-    int operator*(const Vector& rhs);
-    Vector& operator*=(const int number);
+    Vector operator-(const Vector& rhs);
+
+    value operator*(const Vector& rhs);
     // More to go
 
 private:
 // Private Member functions here
-    int v[NDIM];
+    value v[NDIM];
 // Member variables are ALWAYS private, and they go here
 };
 
 // Nonmember function operators go here
 ostream& operator<<(ostream& os, const Vector& v);
+Vector operator+=(Vector& rhs, const value number);
+Vector operator*(Vector& rhs, const value number);
+Vector operator*=(Vector& rhs, const value number);
 

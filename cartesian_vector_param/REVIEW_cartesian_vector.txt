@@ -1,0 +1,15 @@
+Salut !
+
+Alors pour ce code review ça va aller très vite, c'est propre et vous avez bien pensez
+à mettre le bon nom du dossier ainsi que value au lieu de int.
+
+Seul petite chose, et c'est peut-être lié à ma machine mais comme tel, ça ne compile pas
+et me renvoie ça (image ci-jointe).
+J'ai eu le même souci et en rajoutant ces deux lignes dans le CMakeLists.txt cela devrait
+bien fonctionner :
+
+# set the C++ standard
+set(CMAKE_CXX_STANDARD 11)
+set(CMAKE_CXX_STANDARD_REQUIRED True)
+
+Sur ce, Bon week-end !

@@ -1,10 +1,10 @@
 #include "vector.hh"
 
-int Vector::operator[](size_t idx) const{
+value Vector::operator[](size_t idx) const{
     return v[idx];
 }
 
-int& Vector::operator[](size_t idx){
+value& Vector::operator[](size_t idx){
     return v[idx];
 }
 
@@ -16,16 +16,8 @@ Vector& Vector::operator+=(const Vector& rhs){
     return *this;
 }
 
-Vector& Vector::operator+=(const int number){
-    for (size_t i = 0; i < NDIM; i++)
-    {
-        v[i] += number;
-    }
-    return *this;
-}
-
 Vector Vector::operator+(const Vector& rhs){
-    Vector res;
+    auto res = Vector();
     for (size_t i = 0; i < NDIM; i++)
     {
         res[i] = v[i] + rhs[i];
@@ -41,30 +33,23 @@ Vector& Vector::operator-=(const Vector& rhs){
     return *this;
 }
 
-Vector Vector::operator*(const int number){
-    Vector res;
+Vector Vector::operator-(const Vector& rhs){
+    auto res = Vector();
     for (size_t i = 0; i < NDIM; i++)
     {
-        res[i] = v[i] * number;
+        res[i] = v[i] - rhs[i];
     }
     return res;
+    
 }
 
-int Vector::operator*(const Vector& rhs){
-    int res = 0;
+value Vector::operator*(const Vector& rhs){
+    value res = 0;
     for (size_t i = 0; i < NDIM; i++)
     {
         res += v[i] * rhs[i];
     }
     return res;
-}
-
-Vector& Vector::operator*=(const int number){
-    for (size_t i = 0; i < NDIM; i++)
-    {
-        v[i] *= number;
-    }
-    return *this;
 }
 
 ostream& operator<<(ostream& os, const Vector& v){
@@ -82,6 +67,33 @@ ostream& operator<<(ostream& os, const Vector& v){
     }
     return os;
 }
+
+Vector operator+=(Vector& rhs, const value number){
+    for (size_t i = 0; i < NDIM; i++)
+    {
+        rhs[i] += number;
+    }
+    return rhs;
+}
+
+Vector operator*(Vector& rhs, const value number){
+    auto res = Vector();
+    for (size_t i = 0; i < NDIM; i++)
+    {
+        res[i] = rhs[i] * number;
+    }
+    return res;
+}
+
+Vector operator*=(Vector& rhs, const value number){
+    for (size_t i = 0; i < NDIM; i++)
+    {
+        rhs[i] *= number;
+    }
+    return rhs;
+}
+
+
 
 
 
