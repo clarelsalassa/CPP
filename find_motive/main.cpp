@@ -14,7 +14,9 @@ int main(int argc, char **argv)
     string path = argv[1];
     string motive = argv[2];
 
-    ifstream myfile = ifstream(path);
+    ifstream myfile;
+    myfile.open(path);
+
     if (myfile.fail())
     {
         cout << "The file " + path + " could not be opened." << '\n';
@@ -24,12 +26,14 @@ int main(int argc, char **argv)
     string word;
     size_t count = 0;
     while (myfile >> word)
+    {
         if (word.find(motive) != string::npos)
-            count = count + 1;
-
-    cout << "The file " + path + " contains " + to_string(count)
-            + " words containing the motive " + motive
-         << endl;
+            count++;
+    }
+    myfile.close();
+    
+    cout << "The file " + path + " contains " << count 
+         << " words containing the motive " << motive << endl;
 
     return 0;
 }
