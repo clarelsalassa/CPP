@@ -1,10 +1,8 @@
 #pragma once
 
 #include <ostream>
-#include <initializer_list>
 
 #include "config.h"
-using namespace std;
 
 class Vector
 {
@@ -16,16 +14,19 @@ public:
 //
 
 // Add suitable constructors
-    Vector(){
-        for (size_t i = 0; i < NDIM; i++)
+    Vector()
+    {
+        for (size_t i = 0; i < NDIM; ++i)
             v[i] = 0;
     }
-    Vector(initializer_list<value> l){
+
+    Vector(std::initializer_list<value> l)
+    {
         size_t i = 0;
-        for (value num : l)
+        for (auto it = l.begin(); it != l.end(); ++it)
         {
-            v[i] = num;
-            i++;
+            v[i] = *it;
+            ++i;
         }
     }
     // possibly more
@@ -50,8 +51,9 @@ private:
 };
 
 // Nonmember function operators go here
-ostream& operator<<(ostream& os, const Vector& v);
-Vector operator+=(Vector& rhs, const value number);
+std::ostream& operator<<(std::ostream& os, const Vector& v);
 Vector operator*(Vector& rhs, const value number);
 Vector operator*=(Vector& rhs, const value number);
+Vector operator+=(Vector& rhs, const value number);
+
 

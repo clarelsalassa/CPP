@@ -1,8 +1,8 @@
 cmake_minimum_required(VERSION 3.0)
 
 # set the C++ standard
-set(CMAKE_CXX_STANDARD 11)
-set(CMAKE_CXX_STANDARD_REQUIRED True)
+# set(CMAKE_CXX_STANDARD 11)
+# set(CMAKE_CXX_STANDARD_REQUIRED True)
 
 # set the project name
 project(cartesian_vector_param)
@@ -20,3 +20,6 @@ add_executable(main main.cc vector.cc)
 #target_link_libraries(main mysource)
 
 #target_link_libraries(main mysource_2)
+
+# Compilation optimization
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -O2")
