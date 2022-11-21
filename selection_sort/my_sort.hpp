@@ -5,9 +5,9 @@
 
 template<typename T>
 void my_selection_sort( T begin, T end) {
-    for (auto i = begin; i != end; ++i) {
-        auto min = i;
-        for (auto j = i; j != end; ++j) {
+    for (T i = begin; i != end; ++i) {
+        T min = i;
+        for (T j = i; j != end; ++j) {
             if (*j < *min) {
                 min = j;
             }
@@ -18,5 +18,3 @@ void my_selection_sort( T begin, T end) {
         *min = tmp;
     }
 }
-
-// std::swap(*i, *min);
