@@ -1,0 +1,5 @@
+/home/clarel-salassa/CPP/Project_SDL/test_SDL - Kopie/CMakeFiles/rebuild_cache.dir
+/home/clarel-salassa/CPP/Project_SDL/test_SDL - Kopie/CMakeFiles/edit_cache.dir
+/home/clarel-salassa/CPP/Project_SDL/test_SDL - Kopie/SDL_Test/CMakeFiles/edit_cache.dir
+/home/clarel-salassa/CPP/Project_SDL/test_SDL - Kopie/SDL_Test/CMakeFiles/rebuild_cache.dir
+/home/clarel-salassa/CPP/Project_SDL/test_SDL - Kopie/SDL_Test/CMakeFiles/SDLTest.dir

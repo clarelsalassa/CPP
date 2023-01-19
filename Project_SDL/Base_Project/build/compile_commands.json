@@ -1,0 +1,57 @@
+[
+{
+  "directory": "/home/clarel-salassa/Desktop/CPP/Project_SDL/Base_Project/build",
+  "command": "/usr/bin/g++  -I/usr/include/SDL2 -I/home/clarel-salassa/Desktop/CPP/Project_SDL/Base_Project/SDL2_image -g -Wall -Wextra -pedantic -Werror -fsanitize=address -fno-omit-frame-pointer -o CMakeFiles/SDL_project.dir/Project_SDL_Part_2/src/main.cpp.o -c /home/clarel-salassa/Desktop/CPP/Project_SDL/Base_Project/Project_SDL_Part_2/src/main.cpp",
+  "file": "/home/clarel-salassa/Desktop/CPP/Project_SDL/Base_Project/Project_SDL_Part_2/src/main.cpp"
+},
+{
+  "directory": "/home/clarel-salassa/Desktop/CPP/Project_SDL/Base_Project/build",
+  "command": "/usr/bin/g++  -I/usr/include/SDL2 -I/home/clarel-salassa/Desktop/CPP/Project_SDL/Base_Project/SDL2_image -g -Wall -Wextra -pedantic -Werror -fsanitize=address -fno-omit-frame-pointer -o CMakeFiles/SDL_project.dir/Project_SDL_Part_2/src/render.cpp.o -c /home/clarel-salassa/Desktop/CPP/Project_SDL/Base_Project/Project_SDL_Part_2/src/render.cpp",
+  "file": "/home/clarel-salassa/Desktop/CPP/Project_SDL/Base_Project/Project_SDL_Part_2/src/render.cpp"
+},
+{
+  "directory": "/home/clarel-salassa/Desktop/CPP/Project_SDL/Base_Project/build",
+  "command": "/usr/bin/g++  -I/usr/include/SDL2 -I/home/clarel-salassa/Desktop/CPP/Project_SDL/Base_Project/SDL2_image -g -Wall -Wextra -pedantic -Werror -fsanitize=address -fno-omit-frame-pointer -o CMakeFiles/SDL_project.dir/Project_SDL_Part_2/src/animal.cpp.o -c /home/clarel-salassa/Desktop/CPP/Project_SDL/Base_Project/Project_SDL_Part_2/src/animal.cpp",
+  "file": "/home/clarel-salassa/Desktop/CPP/Project_SDL/Base_Project/Project_SDL_Part_2/src/animal.cpp"
+},
+{
+  "directory": "/home/clarel-salassa/Desktop/CPP/Project_SDL/Base_Project/build",
+  "command": "/usr/bin/g++  -I/usr/include/SDL2 -I/home/clarel-salassa/Desktop/CPP/Project_SDL/Base_Project/SDL2_image -g -Wall -Wextra -pedantic -Werror -fsanitize=address -fno-omit-frame-pointer -o CMakeFiles/SDL_project.dir/Project_SDL_Part_2/src/application.cpp.o -c /home/clarel-salassa/Desktop/CPP/Project_SDL/Base_Project/Project_SDL_Part_2/src/application.cpp",
+  "file": "/home/clarel-salassa/Desktop/CPP/Project_SDL/Base_Project/Project_SDL_Part_2/src/application.cpp"
+},
+{
+  "directory": "/home/clarel-salassa/Desktop/CPP/Project_SDL/Base_Project/build",
+  "command": "/usr/bin/g++  -I/usr/include/SDL2 -I/home/clarel-salassa/Desktop/CPP/Project_SDL/Base_Project/SDL2_image -g -Wall -Wextra -pedantic -Werror -fsanitize=address -fno-omit-frame-pointer -o CMakeFiles/SDL_project.dir/Project_SDL_Part_2/src/interact.cpp.o -c /home/clarel-salassa/Desktop/CPP/Project_SDL/Base_Project/Project_SDL_Part_2/src/interact.cpp",
+  "file": "/home/clarel-salassa/Desktop/CPP/Project_SDL/Base_Project/Project_SDL_Part_2/src/interact.cpp"
+},
+{
+  "directory": "/home/clarel-salassa/Desktop/CPP/Project_SDL/Base_Project/build",
+  "command": "/usr/bin/g++  -I/usr/include/SDL2 -I/home/clarel-salassa/Desktop/CPP/Project_SDL/Base_Project/SDL2_image -g -Wall -Wextra -pedantic -Werror -fsanitize=address -fno-omit-frame-pointer -o CMakeFiles/SDL_project.dir/Project_SDL_Part_2/src/playable_character.cpp.o -c /home/clarel-salassa/Desktop/CPP/Project_SDL/Base_Project/Project_SDL_Part_2/src/playable_character.cpp",
+  "file": "/home/clarel-salassa/Desktop/CPP/Project_SDL/Base_Project/Project_SDL_Part_2/src/playable_character.cpp"
+},
+{
+  "directory": "/home/clarel-salassa/Desktop/CPP/Project_SDL/Base_Project/build",
+  "command": "/usr/bin/g++  -I/usr/include/SDL2 -I/home/clarel-salassa/Desktop/CPP/Project_SDL/Base_Project/SDL2_image -g -Wall -Wextra -pedantic -Werror -fsanitize=address -fno-omit-frame-pointer -o CMakeFiles/SDL_project.dir/Project_SDL_Part_2/src/sheep.cpp.o -c /home/clarel-salassa/Desktop/CPP/Project_SDL/Base_Project/Project_SDL_Part_2/src/sheep.cpp",
+  "file": "/home/clarel-salassa/Desktop/CPP/Project_SDL/Base_Project/Project_SDL_Part_2/src/sheep.cpp"
+},
+{
+  "directory": "/home/clarel-salassa/Desktop/CPP/Project_SDL/Base_Project/build",
+  "command": "/usr/bin/g++  -I/usr/include/SDL2 -I/home/clarel-salassa/Desktop/CPP/Project_SDL/Base_Project/SDL2_image -g -Wall -Wextra -pedantic -Werror -fsanitize=address -fno-omit-frame-pointer -o CMakeFiles/SDL_project.dir/Project_SDL_Part_2/src/shepherd.cpp.o -c /home/clarel-salassa/Desktop/CPP/Project_SDL/Base_Project/Project_SDL_Part_2/src/shepherd.cpp",
+  "file": "/home/clarel-salassa/Desktop/CPP/Project_SDL/Base_Project/Project_SDL_Part_2/src/shepherd.cpp"
+},
+{
+  "directory": "/home/clarel-salassa/Desktop/CPP/Project_SDL/Base_Project/build",
+  "command": "/usr/bin/g++  -I/usr/include/SDL2 -I/home/clarel-salassa/Desktop/CPP/Project_SDL/Base_Project/SDL2_image -g -Wall -Wextra -pedantic -Werror -fsanitize=address -fno-omit-frame-pointer -o CMakeFiles/SDL_project.dir/Project_SDL_Part_2/src/shepherd_dog.cpp.o -c /home/clarel-salassa/Desktop/CPP/Project_SDL/Base_Project/Project_SDL_Part_2/src/shepherd_dog.cpp",
+  "file": "/home/clarel-salassa/Desktop/CPP/Project_SDL/Base_Project/Project_SDL_Part_2/src/shepherd_dog.cpp"
+},
+{
+  "directory": "/home/clarel-salassa/Desktop/CPP/Project_SDL/Base_Project/build",
+  "command": "/usr/bin/g++  -I/usr/include/SDL2 -I/home/clarel-salassa/Desktop/CPP/Project_SDL/Base_Project/SDL2_image -g -Wall -Wextra -pedantic -Werror -fsanitize=address -fno-omit-frame-pointer -o CMakeFiles/SDL_project.dir/Project_SDL_Part_2/src/wolf.cpp.o -c /home/clarel-salassa/Desktop/CPP/Project_SDL/Base_Project/Project_SDL_Part_2/src/wolf.cpp",
+  "file": "/home/clarel-salassa/Desktop/CPP/Project_SDL/Base_Project/Project_SDL_Part_2/src/wolf.cpp"
+},
+{
+  "directory": "/home/clarel-salassa/Desktop/CPP/Project_SDL/Base_Project/build",
+  "command": "/usr/bin/g++  -I/usr/include/SDL2 -I/home/clarel-salassa/Desktop/CPP/Project_SDL/Base_Project/SDL2_image -g -Wall -Wextra -pedantic -Werror -fsanitize=address -fno-omit-frame-pointer -o CMakeFiles/SDL_project.dir/Project_SDL_Part_2/src/ground.cpp.o -c /home/clarel-salassa/Desktop/CPP/Project_SDL/Base_Project/Project_SDL_Part_2/src/ground.cpp",
+  "file": "/home/clarel-salassa/Desktop/CPP/Project_SDL/Base_Project/Project_SDL_Part_2/src/ground.cpp"
+}
+]
